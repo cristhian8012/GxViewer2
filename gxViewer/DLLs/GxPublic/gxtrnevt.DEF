@@ -1,0 +1,200 @@
+addmth( 2 2 40
+ 40
+addyr( 2 2 40
+ 40
+age( 1 2 40
+ 40
+ask( 1 1 10
+browserid( 0 0
+browserversion( 0 0
+bytecount( 2 2 40
+ 40
+cdow( 1 2 40
+ 12
+chr( 1 1 40
+cmonth( 1 2 40
+ 12
+color( 1 1 33
+cols( 1 1 200
+concat( 2 3 33
+ 33
+ 33
+confirmed( 0 0
+create( 1 -1 102
+ 40
+ctod( 1 1 33
+ctot( 1 1 33
+cursor( 1 1 03
+day( 1 1 40
+decrypt64( 2 2 40
+ 40
+deletefile( 1 1 40
+dfrclose( 0 0
+dfrgdate( 1 3 40
+ 40
+ 40
+dfrgnum( 1 1 40
+dfrgtxt( 1 2 40
+ 40
+dfrnext( 0 0
+dfropen( 1 5 40
+ 40
+ 40
+ 40
+ 40
+dfwclose( 0 0
+dfwnext( 0 0
+dfwopen( 1 5 40
+ 40
+ 40
+ 40
+ 40
+dfwpdate( 1 3 40
+ 40
+ 40
+dfwpnum( 2 2 40
+ 40
+dfwptxt( 1 2 40
+ 40
+dow( 1 1 40
+dtoc( 1 1 40
+encrypt64( 2 2 40
+ 40
+enumerationdescription( 1 1 03
+enumerationname( 1 1 03
+eom( 1 1 40
+fileexist( 1 1 40
+format( 1 -1 40
+ 40
+getcookie( 1 1 40
+getdatastore( 1 1 40
+getencryptionkey( 0 0
+getlocation( 1 1 40
+getmessagetext( 1 1 40
+getsoaperr( 0 0
+getsoaperrmsg( 0 0
+gxgetmli( 3 3 40
+ 40
+ 40
+gxmlines( 2 2 40
+ 40
+hour( 1 1 40
+iif( 3 3 40
+ 40
+ 40
+int( 1 1 40
+isnull( 1 1 01
+len( 1 1 33
+level( 1 1 01
+link( 1 -1 913
+ 40
+loadbitmap( 1 1 13
+lower( 1 1 33
+ltrim( 1 1 400033
+minute( 1 1 40
+mod( 2 2 40
+ 40
+modified( 0 0
+month( 1 1 40
+newline( 0 0
+now( 0 0
+null( 1 1 03
+nullvalue( 1 1 203
+old( 1 1 01
+opendocument( 1 1 40
+padl( 2 3 40
+ 40
+ 40
+padr( 2 3 40
+ 40
+ 40
+printdocument( 1 1 40
+random( 0 0
+readregkey( 1 1 40
+remoteaddr( 0 0
+returnonclick( 0 0
+rgb( 3 3 40
+ 40
+ 40
+round( 2 2 40
+ 04
+roundtoeven( 2 2 40
+ 04
+rows( 1 1 200
+rseed( 1 1 40
+rtrim( 1 1 400033
+second( 1 1 40
+serverdate( 0 0
+servernow( 0 0
+servertime( 0 0
+setcookie( 2 6 40
+ 40
+ 40
+ 40
+ 40
+ 40
+setenvproperty( 2 2 40
+ 40
+setlanguage( 1 1 40
+setuserid( 1 1 40
+setwrkst( 1 1 40
+shell( 1 2 40
+ 40
+sleep( 1 1 40
+space( 1 1 07
+str( 1 3 40
+ 40
+ 40
+strreplace( 3 3 40
+ 40
+ 40
+strsearch( 2 3 40
+ 40
+ 40
+strsearchrev( 2 3 40
+ 40
+ 40
+substr( 3 3 33
+ 07
+ 07
+sysdate( 0 0
+systime( 0 0
+tadd( 2 2 40
+ 40
+tdiff( 2 2 40
+ 40
+time( 0 0
+today( 0 0
+toformattedstring( 1 1 03
+trim( 1 1 400033
+trunc( 2 2 40
+ 04
+ttoc( 1 3 40
+ 40
+ 40
+udf( 1 -1 110
+ 40021F
+udp( 1 -1 110
+ 40021F
+upper( 1 1 33
+usercls( 0 0
+userid( 0 1 10
+val( 1 1 40
+writeregkey( 2 2 40
+ 40
+wrkst( 0 0
+xsltapply( 2 2 40
+ 40
+xtod( 3 3 40
+ 40
+ 40
+year( 1 1 40
+ymdhmstot( 3 6 40
+ 40
+ 40
+ 40
+ 40
+ 40
+ymdtod( 3 3 40
+ 40
+ 40

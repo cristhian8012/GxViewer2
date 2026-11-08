@@ -1,0 +1,444 @@
+.gxatt
+{
+    COLOR: #1c00ff;
+    TEXT-DECORATION: underline;
+   
+}
+
+.gxattnotexist
+{
+    COLOR: red;
+    TEXT-DECORATION: underline;
+   
+}
+
+.gxobjnotexist
+{
+    COLOR: red;
+    TEXT-DECORATION: underline;
+   
+}
+
+.gxrules
+{
+    COLOR: brown;
+  
+}
+.gxerror
+{
+    COLOR: red;
+  
+}
+.gxnavigfil
+{
+    COLOR: darkblue;
+ 
+}
+.gxformtitle
+{
+    COLOR: darkblue;
+ 
+}
+.gxwarn
+{
+    COLOR: maroon;
+ 
+}
+.gxtable
+{
+    COLOR: #1c00ff;
+    TEXT-DECORATION: underline;
+   
+}
+
+.gxobj
+{
+    COLOR: blue;
+    TEXT-DECORATION: underline;
+    
+}
+.gxerr
+{
+    COLOR: red;
+  
+}
+
+.gxTableHeader
+{
+	COLOR: white
+}
+.gxcurratt
+{
+    COLOR: darkred;
+    TEXT-DECORATION: underline;
+    font-size:70%
+}
+.gxheadcol
+{
+    BACKGROUND-COLOR: white;
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none
+}
+
+
+.tagLeft
+{
+   BACKGROUND-COLOR: #BED7FF;
+}
+
+.tagTable
+{
+    cursor:default;
+	color:white;
+	background-color:#9999cc;
+	padding:2px;
+	cursor:default;
+}
+
+.gxnormal
+{
+   FONT-SIZE: 100%;
+}
+
+.gxcontent
+{
+    BORDER-BOTTOM: white thin inset;
+    BORDER-LEFT: white thin;
+    BORDER-RIGHT: white thin inset;
+    FONT-SIZE: 70%;
+    BORDER-TOP: white thin
+}
+
+.gxcontentNormal
+{
+    BORDER-BOTTOM: white thin inset;
+    BORDER-LEFT: white thin;
+    BORDER-RIGHT: white thin inset;
+    BORDER-TOP: white thin
+}
+
+.gxdiff
+{
+    BACKGROUND-COLOR: yellow;
+    BORDER-BOTTOM: blue;
+    BORDER-LEFT: blue;
+    BORDER-RIGHT: blue;
+    BORDER-TOP: blue;
+    CURSOR: crosshair
+}
+
+.gxheadercolumn
+{
+	BACKGROUND-COLOR: #CDAAAD;
+	BORDER-BOTTOM-COLOR: #CDAAAD;
+	BORDER-BOTTOM-STYLE: solid;
+	BORDER-RIGHT: #CDAAAD 2px solid
+	font-size: 70%;
+	
+	
+}
+
+.gxcolumnpar
+{
+	BORDER-RIGHT: #CDAAAD 2px solid;
+	font-size: 70%
+}
+
+.gxcolumninpar
+{
+	BACKGROUND-COLOR: #f5f5f5;
+	BORDER-RIGHT: #9999cc 2px solid;
+	
+}
+
+
+BODY  {
+	background: white;
+	font-family:verdana;
+	FONT-SIZE: 70%;
+	color: black;
+	margin:4;
+	cursor:default;
+}
+
+.bigtext
+{
+	font-size:85%;
+}
+
+.text
+{
+	font-size:70%;
+}
+A
+{
+	font-size:70%;
+}
+
+HR
+{
+	color: #9999cc
+}
+
+.clsTabTblCell A {
+	color: #003399;
+	text-decoration: none;
+}
+
+.clsTabTblCell A:hover
+{
+	color: red;
+	text-decoration: none;
+}
+
+.clsTabTblCellUp A {
+	color: #003399;
+	text-decoration: none;
+	cursor:default;
+}
+
+.clsTabTblCellUp A:hover {
+	text-decoration: none;
+}
+
+.clsLeftNav 
+{
+	background:#003399;
+	border-left-style:solid;
+	border-left-color: #003399;
+	border-left-width: 5;
+}
+
+.clsPopupDisplay {
+	position:absolute;
+	display:none;
+	border:1px solid #003399;
+}
+
+.clsSmallLogo {
+	position:absolute;
+	top:10;left:230;
+	color:#ffffff;
+	width:300px;
+	padding-left:15px;
+	font-size:18pt;
+	cursor:default;
+	font-weight:bold;
+}
+.clsSmallLogoEx {
+	position:absolute;
+	top:10;left:100;
+	color:#ffffff;
+	width:300px;
+	padding-left:15px;
+	font-size:18pt;
+	cursor:default;
+	font-weight:bold;
+}
+
+.clsSmallLogoCell {
+	color:#ffffff;
+	width:100%;height:47px;
+	padding-left:15px;
+	font-size:1.2em;
+	cursor:default;
+	font-weight:bold;
+}
+
+.leftNav {
+	background:#003399;
+	cursor:default;
+}
+
+.clsLogo {
+	background-color:#003399;
+}
+
+.clsTabList {
+	background-color:#003399;
+	margin-top: 20;
+	border-left: 6px solid #003399;
+}
+
+
+.clsTabContent {
+	background-color:#ffffff;
+	padding-left:30;
+}
+
+.clsTabToolbar {
+	background-color:#ffffff;
+	background-repeat: no-repeat;
+	padding-left:15;
+}
+
+.clsTabToolbarItem {
+	background-color:#003399;
+	font-size:70%;
+	font-weight:normal;
+	color:#ffffff;
+}
+
+.clsTabItem {
+	background-color:#003399;
+	color:#ffffff;
+	font-size:70%;
+	font-weight:bold;
+	border-right:1px solid #003399;
+	padding-left:5;
+	padding-bottom:4px;
+	padding-top:4px;
+	text-decoration: none;
+	cursor:hand;
+}
+
+.clsTabItemOver	{
+	color: #ffcc99;
+	text-decoration:underline;
+	padding-left:5;
+	padding-bottom:4px;
+	padding-top:4px;
+	cursor:hand;
+}
+
+.clsTabItemSelected {
+	background:white;
+	color:black;
+	font-size:70%;
+	font-weight:bold;
+	border-right:1px solid white;
+	padding-left:5;
+	padding-bottom:4px;
+	padding-top:4px;
+	cursor:default;
+}
+
+.clsChxBoxen {
+	font-size:8pt;
+	color:red;
+	cursor:hand;
+}
+
+.homepagerule {
+	height: 1px;
+	color: #9999cc;
+	z-index:9;
+}
+
+.homepageimage {
+	margin-right:10px;
+	border:0;
+}
+
+.homePageActive	{
+	font-size:70%;
+	line-height:1.5em;
+	color: #003399;
+	text-decoration: underline;
+	cursor:hand;
+}
+
+.homePageActiveHlt {
+	font-size:70%;
+	line-height:1.5em;
+	color: red;
+	text-decoration: underline;
+	cursor:hand;
+}
+
+.homepageinactive
+{
+	font-size: 70%;
+	line-height: 1.5em;
+}
+
+.homePageStatic {
+	font-size:70%;
+	line-height:1.5em;
+	color: black;
+	text-decoration: none;
+	cursor:default;
+}
+
+.homePageTitle {
+	font-size:70%;
+	line-height:2em;
+	color: black;
+	font-weight: bold;
+	cursor: default;
+	vertical-align: baseline;
+}
+
+LABEL {
+	line-height:2em;
+	color: #003399;
+	font-size:70%;
+	text-decoration: none;
+	cursor:default;
+	vertical-align: baseline;
+}
+
+SELECT {
+	font-size:70%;
+	font-family:verdana;
+	margin-right:4px;
+	margin-left:2px;
+}
+
+INPUT {
+	font-size:70%;
+	font-family:verdana;
+	margin-right:4px;
+	margin-left:2px;
+}
+
+.clsGray
+{
+	background: #f7f7f7;
+	
+}
+
+.separator
+{
+	background: #cccccc;
+	font-size: 10%;
+	
+}
+
+
+.clsGrayFont
+{
+	background: #f7f7f7;
+	font-size: 70%;	
+}
+
+ 
+.clsTabTblHead 
+{
+	width:100%;
+}
+
+
+.tableTitle
+{
+	color: White;
+}
+
+.staticTable
+{
+	BORDER-BOTTOM-STYLE: solid; BORDER-BOTTOM-COLOR: #9999cc;
+	BORDER-BOTTOM-STYLE: solid; BORDER-BOTTOM-COLOR: #9999cc;
+	
+	
+}
+
+.gxremoved
+{
+    BACKGROUND-COLOR: #FFC4AA;
+}
+.gxnew
+{
+    BACKGROUND-COLOR: yellow;
+}

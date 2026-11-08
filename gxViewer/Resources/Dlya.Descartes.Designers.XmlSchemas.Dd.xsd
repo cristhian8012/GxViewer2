@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="designer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="extensions" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="otl-extension" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="namespaceUri" type="xs:string" use="required" />
+									<xs:attribute name="type" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>						
+					</xs:complexType>					
+				</xs:element>
+				<xs:element name="members" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element name="inherit-member">
+									<xs:complexType>
+										<xs:attribute name="decl" type="xs:string" use="required" />
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="member">
+									<xs:complexType>
+										<xs:attribute name="decl" type="xs:string" use="required" />
+									</xs:complexType>
+								</xs:element>
+							</xs:choice>
+						</xs:sequence>
+						<xs:attribute name="explicitInheritance" type="xs:boolean" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="schema" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="document">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:element ref="element" minOccurs="0" maxOccurs="unbounded" />
+											<xs:element ref="element-ref" minOccurs="0" maxOccurs="unbounded" />
+										</xs:choice>
+									</xs:sequence>
+									<xs:attribute name="rootChildsSequenceType" type="xs:string" />
+									<xs:attribute name="rootChildsOrder" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="groups" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="uniqueIdGenerator" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="name" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="uniqueIdChecker" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="message" type="xs:string" />
+												<xs:attribute name="messageDuplicatedObject" type="xs:string" />
+												<xs:attribute name="messageContainerObject" type="xs:string" />
+												<xs:attribute name="primaryNameAttribute" type="xs:string" />
+												<xs:attribute name="scopeElementName" type="xs:string" />												
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="sequences" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="sequence" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="name" type="xs:string" use="required" />
+												<xs:attribute name="start" type="xs:int" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="attribute">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="required" />
+			<xs:attribute name="type" type="xs:string" use="required" />
+			<xs:attribute name="required" type="xs:boolean" />
+			<xs:attribute name="defaultValue" type="xs:string" />
+			<xs:attribute name="acceptVariables" type="xs:boolean" />
+			<xs:attribute name="spellCheck" type="xs:string" />
+			<xs:attribute name="values" type="xs:string" />
+			<xs:attribute name="unique" type="xs:string" />
+      <xs:attribute name="uniqueListSeparator" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="calc-attribute">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="required" />
+			<xs:attribute name="type" type="xs:string" use="required" />
+			<xs:attribute name="sequence" type="xs:string" />
+			<xs:attribute name="group" type="xs:string" />
+			<xs:attribute name="baseAttribute" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="element">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="element" />
+					<xs:element ref="element-ref" />
+					<xs:element ref="attribute" />
+					<xs:element ref="calc-attribute" />
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required" />
+			<xs:attribute name="childsSequenceType" type="xs:string" />
+			<xs:attribute name="childsOrder" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="element-ref">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="required" />
+			<xs:attribute name="source" type="xs:string" />
+			<xs:attribute name="path" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

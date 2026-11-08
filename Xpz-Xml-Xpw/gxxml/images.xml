@@ -1,0 +1,123 @@
+<?xml version='1.0'?>
+<Images>
+	<Image Id="IdxDescending">
+		<RelPath>arrowDown.gif</RelPath>
+	</Image>
+	<Image Id="IdxAscending">
+		<RelPath>arrow.gif</RelPath>
+	</Image>
+	<Image Id="FrmlRedNull">
+		<RelPath>fred AllowNull.bmp</RelPath>
+	</Image>
+	<Image Id="FrmlRedNoNull">
+		<RelPath>fred NoAllowNull.bmp</RelPath>
+	</Image>
+	<Image Id="Frml">
+		<RelPath>formula.bmp</RelPath>
+	</Image>
+	<Image Id="FrmlRed">
+		<RelPath>fred.bmp</RelPath>
+	</Image>
+	<Image Id="Key">
+		<RelPath>key.gif</RelPath>
+	</Image>
+	<Image Id="RedNull">
+		<RelPath>red AllowNull.bmp</RelPath>
+	</Image>
+	<Image Id="RedNoNull">
+		<RelPath>red NoAllowNull.bmp</RelPath>
+	</Image>
+	<Image Id="Red">
+		<RelPath>red.bmp</RelPath>
+	</Image>
+	<Image Id="Null">
+		<RelPath>allownull.gif</RelPath>
+	</Image>
+	<Image Id="NoNull">
+		<RelPath>noallownull.bmp</RelPath>
+	</Image>
+	<Image Id="Inf">
+		<RelPath>inf.gif</RelPath>
+	</Image>
+	<Image Id="Collapse">
+		<RelPath>closeNode.gif</RelPath>
+	</Image>
+	<Image Id="Expand">
+		<RelPath>openNode.gif</RelPath>
+	</Image>
+	<Image Id="Spec">
+		<RelPath>spec.bmp</RelPath>
+	</Image>
+	<Image Id="Table">
+		<RelPath>table.ico</RelPath>
+	</Image>
+	<!-- Generators -->
+	<Image Id="gvb">
+		<RelPath>gvb.bmp</RelPath>
+	</Image>
+	<Image Id="gcsvb">
+		<RelPath>gcsvb.bmp</RelPath>
+	</Image>
+	<Image Id="wgvb">
+		<RelPath>wgvb.bmp</RelPath>
+	</Image>
+	<Image Id="wgcsvb">
+		<RelPath>wgcsvb.bmp</RelPath>
+	</Image>
+	<Image Id="gvfp">
+		<RelPath>gvfp.bmp</RelPath>
+	</Image>
+	<Image Id="gcsvfp">
+		<RelPath>gcsvfp.bmp</RelPath>
+	</Image>
+	<Image Id="gj">
+		<RelPath>java.ico</RelPath>
+	</Image>
+	<Image Id="wgj">
+		<RelPath>java.ico</RelPath>
+	</Image>
+	<Image Id="rpg">
+		<RelPath>rpg.ico</RelPath>
+	</Image>
+	<Image Id="net">
+		<RelPath>net.ico</RelPath>
+	</Image>
+	<Image Id="gc">
+		<RelPath>c.ico</RelPath>
+	</Image>
+	<Image Id="design">
+		<RelPath>design.ico</RelPath>
+	</Image>
+	<Image Id="gcbl">
+		<RelPath>cobol.ico</RelPath>
+	</Image>
+	<Image Id="gdos">
+		<RelPath>gvb.bmp</RelPath>
+	</Image>
+	
+	<!-- Status -->
+	<Image Id="Warning">
+		<RelPath>warningIcon.gif</RelPath>
+	</Image>
+	<Image Id="Error">
+		<RelPath>errorIcon.gif</RelPath>
+	</Image>
+	<Image Id="Message">
+		<RelPath>infoIcon.gif</RelPath>
+	</Image>
+	
+		
+	<!-- Objects -->
+	<Image Id="Folder">
+		<RelPath>fld.bmp</RelPath>
+	</Image>
+	
+	<!-- Other stuff -->
+	<Image Id="User">
+		<RelPath>user.bmp</RelPath>
+	</Image>
+	
+
+
+	
+</Images>

@@ -1,0 +1,140 @@
+addmth( 2 2 40
+ 40
+addyr( 2 2 40
+ 40
+age( 1 2 40
+ 40
+bytecount( 2 2 40
+ 40
+cdow( 1 2 40
+ 12
+chr( 1 1 40
+cmonth( 1 2 40
+ 12
+concat( 2 3 33
+ 33
+ 33
+count( 1 3 01
+ 40
+ 14
+ctod( 1 1 33
+ctot( 1 1 33
+day( 1 1 40
+deletefile( 1 1 40
+dow( 1 1 40
+dtoc( 1 1 40
+eom( 1 1 40
+exists( 1 1 01
+fileexist( 1 1 40
+find( 1 3 01
+ 40
+ 14
+format( 1 -1 40
+ 40
+getmessagetext( 1 1 40
+getsoaperr( 0 0
+gxgetmli( 3 3 40
+ 40
+ 40
+gxmlines( 2 2 40
+ 40
+hour( 1 1 40
+iif( 3 3 40
+ 40
+ 40
+int( 1 1 40
+isnull( 1 1 01
+len( 1 1 33
+lower( 1 1 33
+ltrim( 1 1 400033
+max( 1 4 01
+ 40
+ 14
+ 01
+min( 1 4 01
+ 40
+ 14
+ 01
+minute( 1 1 40
+month( 1 1 40
+newline( 0 0
+now( 0 0
+null( 1 1 03
+nullvalue( 1 1 203
+padl( 2 3 40
+ 40
+ 40
+padr( 2 3 40
+ 40
+ 40
+random( 0 0
+round( 2 2 40
+ 04
+roundtoeven( 2 2 40
+ 04
+rseed( 1 1 40
+rtrim( 1 1 400033
+second( 1 1 40
+serverdate( 0 0
+servernow( 0 0
+servertime( 0 0
+set( 1 3 01
+ 40
+ 14
+setlanguage( 1 1 40
+space( 1 1 07
+str( 1 3 40
+ 40
+ 40
+strreplace( 3 3 40
+ 40
+ 40
+strsearch( 2 3 40
+ 40
+ 40
+strsearchrev( 2 3 40
+ 40
+ 40
+substr( 3 3 33
+ 07
+ 07
+sum( 1 3 01
+ 40
+ 14
+sysdate( 0 0
+systime( 0 0
+tadd( 2 2 40
+ 40
+tdiff( 2 2 40
+ 40
+time( 0 0
+today( 0 0
+toformattedstring( 1 1 03
+trim( 1 1 400033
+trunc( 2 2 40
+ 04
+ttoc( 1 3 40
+ 40
+ 40
+udf( 1 -1 110
+ 40021F
+udp( 1 -1 110
+ 40021F
+upper( 1 1 33
+usercls( 0 0
+userid( 0 1 10
+val( 1 1 40
+wrkst( 0 0
+xtod( 3 3 40
+ 40
+ 40
+year( 1 1 40
+ymdhmstot( 3 6 40
+ 40
+ 40
+ 40
+ 40
+ 40
+ymdtod( 3 3 40
+ 40
+ 40

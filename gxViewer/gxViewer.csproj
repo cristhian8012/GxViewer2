@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gxViewer</RootNamespace>
+    <AssemblyName>gxViewer</AssemblyName>
+    <ApplicationIcon>iconoGX.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>100BA113E959C717C24C6BA20465B430BC0E0805</ManifestCertificateThumbprint>
+    <ManifestKeyFile>gxViewer_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\CAR\SES-SBP\Programas\GXViewer_exe\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox, Version=2.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="GXBaseKB, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GXBaseKB.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.5.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.0.30714, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Christian\Desktop\Patterns10\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2903.40, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2903.40\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2903.40, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2903.40\lib\net462\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NetSpell.SpellChecker, Version=2.1.7.41329, Culture=neutral, PublicKeyToken=318b389f0db66e46">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NetSpell.SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SISTEMAS\SGR_Genexus\SGR_Genexus\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView">
+      <HintPath>C:\Users\user\Downloads\examples\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AS400\As400Object.cs" />
+    <Compile Include="AS400\AS400_Helper.cs" />
+    <Compile Include="AS400\AS400_Types.cs" />
+    <Compile Include="Designer.cs" />
+    <Compile Include="CSS.cs" />
+    <Compile Include="CSS_HTML.cs" />
+    <Compile Include="frmGxPublicV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGxPublicV2.Designer.cs">
+      <DependentUpon>frmGxPublicV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectionToCompareAs400.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectionToCompareAs400.Designer.cs">
+      <DependentUpon>frmSelectionToCompareAs400.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTestTransformXLST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTestTransformXLST.Designer.cs">
+      <DependentUpon>frmTestTransformXLST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConvertToBase64.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvertToBase64.Designer.cs">
+      <DependentUpon>frmConvertToBase64.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConvertToFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvertToFile.Designer.cs">
+      <DependentUpon>frmConvertToFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputBox.Designer.cs">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectionToCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectionToCompare.Designer.cs">
+      <DependentUpon>frmSelectionToCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewBrowser.Designer.cs">
+      <DependentUpon>frmViewBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewXML.Designer.cs">
+      <DependentUpon>frmViewXML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilesGX.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutBox.Designer.cs">
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="AS400Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AS400Editor.Designer.cs">
+      <DependentUpon>AS400Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gx18\Gx18Helper.cs" />
+    <Compile Include="Gx18\Gx18Main.cs" />
+    <Compile Include="GxDebugger\BlockHandlers\DoCaseBlockHandler.cs" />
+    <Compile Include="GxDebugger\BlockHandlers\ForEachBlockHandler.cs" />
+    <Compile Include="GxDebugger\Engine\DebuggerEngine.cs" />
+    <Compile Include="GxDebugger\Engine\DebugLogger.cs" />
+    <Compile Include="GxDebugger\Engine\DebugManager.cs" />
+    <Compile Include="GxDebugger\Engine\DebugSession.cs" />
+    <Compile Include="GxDebugger\Evaluators\ConditionEvaluator.cs" />
+    <Compile Include="GxDebugger\Evaluators\LineEvaluator.cs" />
+    <Compile Include="GxDebugger\Generators\SQLGeneratorGX.cs" />
+    <Compile Include="GxDebugger\Helpers\CodeLineHighlighter.cs" />
+    <Compile Include="GxDebugger\Helpers\ParameterHelper.cs" />
+    <Compile Include="GxDebugger\Helpers\MockDb.cs" />
+    <Compile Include="GxDebugger\Structures\InstructionType.cs" />
+    <Compile Include="GxDebugger\Structures\ParsedLine.cs" />
+    <Compile Include="GxDebugger\Structures\Variable.cs" />
+    <Compile Include="GxDebugger\UI\frmArrayInspector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmArrayInspector.Designer.cs">
+      <DependentUpon>frmArrayInspector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmDebugControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmDebugControl.Designer.cs">
+      <DependentUpon>frmDebugControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmLogPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmLogPanel.Designer.cs">
+      <DependentUpon>frmLogPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmParametroPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmParametroPanel.Designer.cs">
+      <DependentUpon>frmParametroPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmVariablePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmVariablePanel.Designer.cs">
+      <DependentUpon>frmVariablePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmDebugger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GxDebugger\UI\frmDebugger.Designer.cs">
+      <DependentUpon>frmDebugger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GxEditor.Designer.cs">
+      <DependentUpon>GxEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxModelExplorerv2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GxModelExplorerv2.Designer.cs">
+      <DependentUpon>GxModelExplorerv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxObjectsHelper.cs" />
+    <Compile Include="GxEditorHelper.cs" />
+    <Compile Include="GxModelExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GxModelExplorer.Designer.cs">
+      <DependentUpon>GxModelExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxModelos\GxModelConector.cs" />
+    <Compile Include="GxObject\DataTypeId.cs" />
+    <Compile Include="GxObject\HTMLSFL.cs" />
+    <Compile Include="GxObject\HtmlTagForm.cs" />
+    <Compile Include="GxObject\SDT\SdtTreeview.cs" />
+    <Compile Include="GxObject\Attribute.cs" />
+    <Compile Include="GxObject\AttInfo.cs" />
+    <Compile Include="GxObject\AttDoc.cs" />
+    <Compile Include="GxObject\SDT\SDTXml_Definitions.cs" />
+    <Compile Include="GxObject\Conditions.cs" />
+    <Compile Include="GxObject\HTMLControl.cs" />
+    <Compile Include="GxObject\ChildProperties.cs" />
+    <Compile Include="GxObject\HTMLBlock.cs" />
+    <Compile Include="GxObject\HTMLForm.cs" />
+    <Compile Include="GxObject\InText_HTMLBlock.cs" />
+    <Compile Include="GxObject\HTMLText.cs" />
+    <Compile Include="GxObject\HTMLAttriValue.cs" />
+    <Compile Include="GxObject\InTagHTMLBlock.cs" />
+    <Compile Include="GxObject\HTMLTag.cs" />
+    <Compile Include="GxObject\HTMLSpan.cs" />
+    <Compile Include="GxObject\Rows_ColorInfo.cs" />
+    <Compile Include="GxObject\SDTXml.cs" />
+    <Compile Include="GxObject\TblIndex.cs" />
+    <Compile Include="GxObject\Title_ColorInfo.cs" />
+    <Compile Include="GxObject\IdxAttri.cs" />
+    <Compile Include="GxObject\Tit_Font.cs" />
+    <Compile Include="GxObject\Att_Font.cs" />
+    <Compile Include="GxObject\Block.cs" />
+    <Compile Include="GxObject\Button.cs" />
+    <Compile Include="GxObject\CodeBlock.cs" />
+    <Compile Include="GxObject\ColorInfo.cs" />
+    <Compile Include="GxObject\Doc.cs" />
+    <Compile Include="GxObject\FormWindow.cs" />
+    <Compile Include="GxObject\FormInformation.cs" />
+    <Compile Include="GxObject\FormPart.cs" />
+    <Compile Include="GxObject\Form.cs" />
+    <Compile Include="GxObject\DataSource.cs" />
+    <Compile Include="GxObject\Frame.cs" />
+    <Compile Include="GxObject\FVAttri.cs" />
+    <Compile Include="GxObject\DataView.cs" />
+    <Compile Include="GxObject\Edit.cs" />
+    <Compile Include="GxObject\FormInfo.cs" />
+    <Compile Include="GxObject\Index.cs" />
+    <Compile Include="GxObject\Item.cs" />
+    <Compile Include="GxObject\PrintBlock.cs" />
+    <Compile Include="GxObject\Structure.cs" />
+    <Compile Include="GxObject\SubFile.cs" />
+    <Compile Include="GxObject\GxCondition.cs" />
+    <Compile Include="GxObject\ElemAtts.cs" />
+    <Compile Include="GxObject\StructureDataType.cs" />
+    <Compile Include="GxObject\FastStringBuilder.cs" />
+    <Compile Include="GxObject\Table.cs" />
+    <Compile Include="GxObject\WebProperties.cs" />
+    <Compile Include="GxObject\Transaction.cs" />
+    <Compile Include="GxObject\Font.cs" />
+    <Compile Include="GxObject\GXConstants.cs" />
+    <Compile Include="GxObject\GXLoaded.cs" />
+    <Compile Include="GxObject\Layout.cs" />
+    <Compile Include="GxObject\Paper.cs" />
+    <Compile Include="GxObject\Report.cs" />
+    <Compile Include="GxObject\Procedure.cs" />
+    <Compile Include="GxObject\EditInfo.cs" />
+    <Compile Include="GxObject\ExportFile.cs" />
+    <Compile Include="GxObject\Folder.cs" />
+    <Compile Include="GxObject\Events.cs" />
+    <Compile Include="GxObject\Group.cs" />
+    <Compile Include="GxObject\GXAtt.cs" />
+    <Compile Include="GxObject\KMW.cs" />
+    <Compile Include="GxObject\Model.cs" />
+    <Compile Include="GxObject\Rules.cs" />
+    <Compile Include="GxObject\Help.cs" />
+    <Compile Include="GxObject\Documentation.cs" />
+    <Compile Include="GxObject\GXObj.cs" />
+    <Compile Include="GxObject\Info.cs" />
+    <Compile Include="GxObject\ObjInfo.cs" />
+    <Compile Include="GxObject\Property.cs" />
+    <Compile Include="GxObject\Source.cs" />
+    <Compile Include="GxObject\Subroutines.cs" />
+    <Compile Include="GxObject\Subtype.cs" />
+    <Compile Include="GxObject\Text.cs" />
+    <Compile Include="GxObject\Txt_Font.cs" />
+    <Compile Include="GxObject\Variable.cs" />
+    <Compile Include="GxObject\WebPanel.cs" />
+    <Compile Include="GxObject\WorkPanel.cs" />
+    <Compile Include="GxUtil.cs" />
+    <Compile Include="GxValidador\frmAS400Validator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GxValidador\frmAS400Validator.Designer.cs">
+      <DependentUpon>frmAS400Validator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxValidador\GroupWords.cs" />
+    <Compile Include="GxValidador\Coincidencias.cs" />
+    <Compile Include="GxValidador\AS400HtmlRules.cs" />
+    <Compile Include="GxValidador\GXHtmlRules.cs" />
+    <Compile Include="GxValidador\frmValidator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GxValidador\frmValidator.Designer.cs">
+      <DependentUpon>frmValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GxValidador\AS400LoadRules.cs" />
+    <Compile Include="GxValidador\GXLoadRules.cs" />
+    <Compile Include="GxValidador\HardCode.cs" />
+    <Compile Include="GxValidador\Restricciones.cs" />
+    <Compile Include="GxValidador\ValidatorAS400.cs" />
+    <Compile Include="GxValidador\ValidatorGX.cs" />
+    <Compile Include="GxValidador\GXValRegla.cs" />
+    <Compile Include="GxXML.cs" />
+    <Compile Include="HTMLtoXML.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGxPublicV2.resx">
+      <DependentUpon>frmGxPublicV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectionToCompareAs400.resx">
+      <DependentUpon>frmSelectionToCompareAs400.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTestTransformXLST.resx">
+      <DependentUpon>frmTestTransformXLST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvertToBase64.resx">
+      <DependentUpon>frmConvertToBase64.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvertToFile.resx">
+      <DependentUpon>frmConvertToFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputBox.resx">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectionToCompare.resx">
+      <DependentUpon>frmSelectionToCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewBrowser.resx">
+      <DependentUpon>frmViewBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewXML.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmViewXML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AS400Editor.resx">
+      <DependentUpon>AS400Editor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GxDebugger\UI\frmDebugger.resx">
+      <DependentUpon>frmDebugger.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GxEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GxEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GxModelExplorer.resx">
+      <DependentUpon>GxModelExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GxModelExplorerv2.resx">
+      <DependentUpon>GxModelExplorerv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GxValidador\frmAS400Validator.resx">
+      <DependentUpon>frmAS400Validator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GxValidador\frmValidator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmValidator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGxPublic.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGxPublic.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SGR\frmBantotalView.resx">
+      <DependentUpon>frmBantotalView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmGxPublic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGxPublic.Designer.cs">
+      <DependentUpon>frmGxPublic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGR\frmBantotalView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SGR\frmBantotalView.Designer.cs">
+      <DependentUpon>frmBantotalView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGR\GenexusHtmlGenerator.cs" />
+    <Compile Include="SGR\GenexusModel.cs" />
+    <Compile Include="SGR\GenexusStyles.cs" />
+    <Compile Include="SGR\GenexusXmlParser.cs" />
+    <Compile Include="SGR\Model\GxModels.cs" />
+    <Compile Include="SGR\Model\LoginModels.cs" />
+    <Compile Include="SGR\Service\GxApiService.cs" />
+    <Compile Include="SGR\Service\GxCrypto.cs" />
+    <Compile Include="SGR\Service\JsonToGxObj.cs" />
+    <Compile Include="SGR\Service\LoginService.cs" />
+    <Compile Include="XPWConverter\GxDefinitionClass.cs" />
+    <Compile Include="XPWConverter\xPosition.cs" />
+    <Compile Include="XPWConverter\XPWReader.cs" />
+    <Compile Include="ZipGX.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLLs\XMLReader.dll" />
+    <Content Include="DLLs\XPWReader.dll" />
+    <Content Include="DLLs\zlib.dll" />
+    <Content Include="iconoGX.ico" />
+    <None Include="Resources\Dlya.Descartes.Designers.XmlSchemas.Dd.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\GxViewer.png" />
+    <None Include="Resources\image125.jpg" />
+    <None Include="Resources\image073.jpg" />
+    <None Include="Resources\Play_32x32.png" />
+    <None Include="Resources\Close_32x32.png" />
+    <Content Include="Templates\DesingTemplate.html" />
+    <None Include="gxViewer_TemporaryKey.pfx" />
+    <None Include="Resources\informacion.gif" />
+    <None Include="Resources\nuevo_on.gif" />
+    <None Include="Resources\limpiar_on.gif" />
+    <None Include="Resources\ico_indicator.gif" />
+    <None Include="Resources\guardar_on.gif" />
+    <None Include="Resources\excel.jpg" />
+    <None Include="Resources\eliminar_on.gif" />
+    <None Include="Resources\editar_on.gif" />
+    <None Include="Resources\cerrar_on.gif" />
+    <None Include="Resources\buscar_on.gif" />
+    <None Include="Resources\aceptar_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TextColored\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GxKBBase2\GxKBBase18.csproj">
+      <Project>{00729589-f31e-4845-bc88-718fdd212fe2}</Project>
+      <Name>GxKBBase18</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2903.40\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

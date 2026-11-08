@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<Classes>
+	<Class Id='0'><Name>Transaction</Name></Class>
+	<Class Id='1'><Name>Procedure</Name></Class>
+	<Class Id='2'><Name>Report</Name></Class>
+	<Class Id='3'><Name>Menu</Name></Class>
+	<Class Id='4'><Name>Work Panel</Name></Class>
+	<Class Id='5'><Name>Attribute</Name></Class>
+	<Class Id='-5'><Name>Formula</Name></Class>
+	<Class Id='6'><Name>DataView</Name></Class>
+	<Class Id='7'><Name>Table</Name></Class>
+	<Class Id='8'><Name>Folder</Name></Class>
+	<Class Id='9'><Name>Model</Name></Class>
+	<Class Id='10'><Name>Group</Name></Class>
+	<Class Id='11'><Name>Domain</Name></Class>
+	<Class Id='12'><Name>Prompt</Name></Class>
+	<Class Id='13'><Name>Web Panel</Name></Class>
+	<Class Id='14'><Name>External Program</Name></Class>
+	<!-- 15-unused, 16-form class -->
+	<Class Id='17'><Name>Menu Bar</Name></Class>
+	<Class Id='18'><Name>Style Transaction</Name></Class>
+	<Class Id='19'><Name>Style Procedure</Name></Class>
+	<Class Id='20'><Name>Style Report</Name></Class>
+	<Class Id='21'><Name>Style Work Panel</Name></Class>
+	<Class Id='22'><Name>Style Prompt</Name></Class>
+	<Class Id='23'><Name>Style Web Panel</Name></Class>
+	<Class Id='24'><Name>Style MenuBar</Name></Class>
+	<Class Id='25'><Name>Theme</Name></Class>
+	<Class Id='26'><Name>Structured Data Type</Name></Class>
+</Classes>

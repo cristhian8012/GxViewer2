@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gxViewer", "gxViewer\gxViewer.csproj", "{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIB", "LIB", "{377CD53E-40A6-4A3C-95D2-61177C37F638}"
+	ProjectSection(SolutionItems) = preProject
+		gxViewer\DLLs\FastColoredTextBox.dll = gxViewer\DLLs\FastColoredTextBox.dll
+		gxViewer\DLLs\Interop.ADODB.dll = gxViewer\DLLs\Interop.ADODB.dll
+		gxViewer\DLLs\Ionic.Zip.dll = gxViewer\DLLs\Ionic.Zip.dll
+		gxViewer\DLLs\SBP.Tools.GXPublic.dll = gxViewer\DLLs\SBP.Tools.GXPublic.dll
+		gxViewer\DLLs\XMLReader.dll = gxViewer\DLLs\XMLReader.dll
+		gxViewer\DLLs\XPWReader.dll = gxViewer\DLLs\XPWReader.dll
+		gxViewer\DLLs\zlib.dll = gxViewer\DLLs\zlib.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JTextEditor", "JTextEditor\JTextEditor.csproj", "{E1290FCE-E9B9-4C18-B8B3-CE68C692E792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GxKBBase18", "GxKBBase2\GxKBBase18.csproj", "{00729589-F31E-4845-BC88-718FDD212FE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}.Debug|x86.Build.0 = Debug|Any CPU
+		{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}.Release|x86.ActiveCfg = Release|Any CPU
+		{B3B40DE5-D6FF-47D8-8C4A-E6DE0626FBAB}.Release|x86.Build.0 = Release|Any CPU
+		{E1290FCE-E9B9-4C18-B8B3-CE68C692E792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1290FCE-E9B9-4C18-B8B3-CE68C692E792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1290FCE-E9B9-4C18-B8B3-CE68C692E792}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E1290FCE-E9B9-4C18-B8B3-CE68C692E792}.Debug|x86.Build.0 = Debug|Any CPU
+		{E1290FCE-E9B9-4C18-B8B3-CE68C692E792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1290FCE-E9B9-4C18-B8B3-CE68C692E792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1290FCE-E9B9-4C18-B8B3-CE68C692E792}.Release|x86.ActiveCfg = Release|Any CPU
+		{E1290FCE-E9B9-4C18-B8B3-CE68C692E792}.Release|x86.Build.0 = Release|Any CPU
+		{00729589-F31E-4845-BC88-718FDD212FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00729589-F31E-4845-BC88-718FDD212FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00729589-F31E-4845-BC88-718FDD212FE2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{00729589-F31E-4845-BC88-718FDD212FE2}.Debug|x86.Build.0 = Debug|Any CPU
+		{00729589-F31E-4845-BC88-718FDD212FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00729589-F31E-4845-BC88-718FDD212FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00729589-F31E-4845-BC88-718FDD212FE2}.Release|x86.ActiveCfg = Release|Any CPU
+		{00729589-F31E-4845-BC88-718FDD212FE2}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95E90D54-F02B-416B-8B02-C05F6EF55308}
+	EndGlobalSection
+EndGlobal

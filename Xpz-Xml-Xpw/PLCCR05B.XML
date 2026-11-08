@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ExportFile>
+  <Model>
+    <Id>2</Id>
+    <Name>Bantotal RPG/400</Name>
+    <Type>Production</Type>
+    <AttLen>10</AttLen>
+    <TblLen>8</TblLen>
+    <ObjLen>8</ObjLen>
+  </Model>
+  <Description>GxPublic Distribution</Description>
+  <KMW>
+    <MajorVersion>2</MajorVersion>
+    <MinorVersion>1</MinorVersion>
+    <Path>D:\Models\G80btCc</Path>
+    <MaxGxBuildSaved>1595</MaxGxBuildSaved>
+  </KMW>
+  <GXObject>
+    <Procedure>
+      <Info>
+        <Name>LCCR05B</Name>
+        <Description>Valida estado guia 99</Description>
+        <Folder>CTAS_CTES_Y_AHO</Folder>
+        <DWHTrn>4</DWHTrn>
+      </Info>
+      <ObjInfo>
+      </ObjInfo>
+      <Documentation>
+        <Source><![CDATA[Programa    :   PLCCR05B<BR>Objetivo    :   Valida que el estado del saldo sea &lt;&gt; a los de guia 99<BR>fecha       :   12/06/2001<BR>Autor       :   Cristina Trigo<BR>]]></Source>
+      </Documentation>
+      <LastUpdate>2001-06-12 21:51:20GMT</LastUpdate>
+      <Variable>
+        <Name>Today</Name>
+        <Title>Today</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+      </Variable>
+      <Variable>
+        <Id>-2</Id>
+        <Name>Time</Name>
+        <Title>Time</Title>
+        <Type>Character</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-3</Id>
+        <Name>Page</Name>
+        <Title>Page</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-4</Id>
+        <Name>Line</Name>
+        <Title>Line</Title>
+        <Length>6</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-5</Id>
+        <Name>Output</Name>
+        <Title>Output</Title>
+        <Type>Character</Type>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-6</Id>
+        <Name>Pgmname</Name>
+        <Title>Pgmname</Title>
+        <Type>Character</Type>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-7</Id>
+        <Name>Pgmdesc</Name>
+        <Title>Pgmdesc</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-8</Id>
+        <Name>pgcod</Name>
+        <Title>pgcod</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-9</Id>
+        <Name>itsuc</Name>
+        <Title>itsuc</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-10</Id>
+        <Name>itmod</Name>
+        <Title>itmod</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-11</Id>
+        <Name>ittran</Name>
+        <Title>ittran</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-12</Id>
+        <Name>itnrel</Name>
+        <Title>itnrel</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-13</Id>
+        <Name>itord</Name>
+        <Title>itord</Title>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>Z9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>Z9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-14</Id>
+        <Name>itsbor</Name>
+        <Title>itsbor</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-15</Id>
+        <Name>ctcta</Name>
+        <Title>ctcta</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-16</Id>
+        <Name>ctsbop</Name>
+        <Title>ctsbop</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-17</Id>
+        <Name>ctmda</Name>
+        <Title>ctmda</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-18</Id>
+        <Name>ctsuc</Name>
+        <Title>ctsuc</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-19</Id>
+        <Name>ctfval</Name>
+        <Title>ctfval</Title>
+        <Type>Date</Type>
+        <Length>8</Length>
+        <Decimals>0</Decimals>
+        <Picture>99/99/99</Picture>
+      </Variable>
+      <Variable>
+        <Id>-20</Id>
+        <Name>ctsdo</Name>
+        <Title>ctsdo</Title>
+        <Length>15</Length>
+        <Sign>Y</Sign>
+        <Picture>ZZZZZZZZZZZ9.99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZ9.99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-21</Id>
+        <Name>ctint</Name>
+        <Title>ctint</Title>
+        <Length>15</Length>
+        <Sign>Y</Sign>
+        <Picture>ZZZZZZZZZZZ9.99</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZ9.99</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-22</Id>
+        <Name>cancel</Name>
+        <Title>cancel</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-23</Id>
+        <Name>ctrub</Name>
+        <Title>ctrub</Title>
+        <Length>16</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-24</Id>
+        <Name>ctmod</Name>
+        <Title>ctmod</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-25</Id>
+        <Name>Renglon1</Name>
+        <Title>Renglon1</Title>
+        <Type>Character</Type>
+        <Length>45</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-26</Id>
+        <Name>Renglon2</Name>
+        <Title>Renglon2</Title>
+        <Type>Character</Type>
+        <Length>45</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-27</Id>
+        <Name>Renglon3</Name>
+        <Title>Renglon3</Title>
+        <Type>Character</Type>
+        <Length>45</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-28</Id>
+        <Name>CodErr</Name>
+        <Title>CodErr</Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-29</Id>
+        <Name>cttope</Name>
+        <Title>cttope</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-30</Id>
+        <Name>ctpap</Name>
+        <Title>ctpap</Title>
+        <Length>4</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-31</Id>
+        <Name>ctoper</Name>
+        <Title>ctoper</Title>
+        <Length>9</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-32</Id>
+        <Name>FiltraSts</Name>
+        <Title>FiltraSts </Title>
+        <Type>Character</Type>
+        <Length>1</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-33</Id>
+        <Name>Ptpcod</Name>
+        <Title>Ptpcod</Title>
+        <Length>5</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-34</Id>
+        <Name>Pscstat</Name>
+        <Title>Pscstat</Title>
+        <Length>3</Length>
+        <Decimals>0</Decimals>
+        <Picture>ZZ9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>ZZ9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-35</Id>
+        <Name>Scstat</Name>
+        <Title>Scstat</Title>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+        <Picture>Z9</Picture>
+        <Property>
+          <Type>string</Type>
+          <Name>ATT_PICTURE</Name>
+          <Value>Z9</Value>
+        </Property>
+      </Variable>
+      <Variable>
+        <Id>-36</Id>
+        <Name>Desc</Name>
+        <Title>Desc</Title>
+        <Type>Character</Type>
+        <Length>30</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Variable>
+        <Id>-37</Id>
+        <Name>cScstat</Name>
+        <Title>cScstat</Title>
+        <Type>Character</Type>
+        <Length>2</Length>
+        <Decimals>0</Decimals>
+      </Variable>
+      <Property>
+        <Type>string</Type>
+        <Name>OUTPUT</Name>
+        <Value>PRN</Value>
+        <Rule>Output('PRN')</Rule>
+      </Property>
+      <Property>
+        <Type>string</Type>
+        <Name>CONFIRM</Name>
+        <Value>NO</Value>
+      </Property>
+      <Property>
+        <Type>string</Type>
+        <Name>TRNEND</Name>
+        <Value>No</Value>
+        <Rule>noendtrn()</Rule>
+      </Property>
+      <Layout>
+        <NextControlID>22</NextControlID>
+        <FormInfo>
+          <FormId>1</FormId>
+          <FormClass>Text</FormClass>
+          <IsGraphic>N</IsGraphic>
+          <IsDefault>N</IsDefault>
+          <Att_Font>
+            <Name>Courier New</Name>
+            <Size>9</Size>
+          </Att_Font>
+          <Txt_Font>
+            <Bold>Y</Bold>
+          </Txt_Font>
+          <GridWidth>13</GridWidth>
+          <GridHeight>13</GridHeight>
+          <TemplateBased>N</TemplateBased>
+        </FormInfo>
+        <Block>
+          <CodeBlock>
+            <left>17</left>
+            <top>1</top>
+            <right>619</right>
+            <bottom>1141</bottom>
+            <Brush>Y</Brush>
+            <TextMode>Y</TextMode>
+            <ColorInfo>
+              <Foreground>Lime</Foreground>
+            </ColorInfo>
+            <WebProperties>
+            </WebProperties>
+            <FromStyle>N</FromStyle>
+            <FromDefault>N</FromDefault>
+            <ForeColor>-2147483642</ForeColor>
+            <BackColor>-2147483633</BackColor>
+            <BorderWidth>0</BorderWidth>
+            <Shape>Frame</Shape>
+            <OutStyle>Single</OutStyle>
+            <GSGridWidth>7</GSGridWidth>
+            <GSGridHeight>15</GSGridHeight>
+            <Source><![CDATA[// Valida estado de guia de proceso 99
+// FSD603
+FOR EACH ORDER Pgcod Itsuc Itmod Ittran Itnrel PfdId
+    WHERE Pgcod = &Pgcod
+    WHERE Itsuc = &itsuc
+    WHERE Itmod = &itmod
+    WHERE Ittran = &ittran
+    WHERE Itnrel = &itnrel
+    WHERE PfdId  = 0
+    DEFINED BY PfdId
+    &ctcta   = PfdCt01
+    &ctsbop  = PfdSo01
+    &ctmda   = PfdMo01
+    &ctsuc   = PfdSu01
+    &ctmod   = PfdSu05
+    &cttope  = 0
+    &ctpap   = 0
+    &ctoper  = 0
+
+    // Lee FSD011 para Validar scstat
+    FOR EACH ORDER Pgcod Scmod Sctope Scmda Scpap Sccta Scoper Scsbop
+        WHERE Pgcod  = &Pgcod
+        WHERE Scmod  = &ctmod
+        WHERE Sctope = &cttope
+        WHERE Scmda  = &ctmda
+        WHERE Scpap  = &ctpap
+        WHERE Sccta  = &ctcta
+        WHERE Scoper = &ctoper
+        WHERE Scsbop = &ctsbop
+        DEFINED BY Scsdo
+        &Pscstat   = Scstat
+        &Scstat    = Scstat
+        &cScstat   = str(&Scstat,2)
+        &FiltraSts = 'N'
+        IF Scstat <> 0
+           DO 'Filtra'
+        ENDIF            
+        If &FiltraSts = 'S'
+           &Desc      = ' '
+           do 'Busca_DescEst'
+           &renglon1 = 'Error: Cuenta con estado'
+           &renglon1 = concat(&renglon1,&cScstat,'  ')
+           &renglon2 = &Desc
+           &renglon3 = '                        '
+           call(WLAGW07,&renglon1,&renglon2,&renglon3,&Coderr)
+           &Cancel = 'S'
+           &Coderr = 'S'
+       EndIf
+    ENDFOR
+
+ENDFOR
+
+//*************************************************************************
+Sub 'Filtra'
+
+&Ptpcod    = 99
+&FiltraSts = 'N'
+// FST098
+FOR EACH
+    WHERE Pgcod = &Pgcod
+    WHERE Tpcod = &Ptpcod
+    WHERE Tpcorr = &Pscstat
+    DEFINED BY Tpdesc
+    &FiltraSts = 'S'
+ENDFOR
+
+ENDSub
+//**************************************************************************
+Sub 'Busca_DescEst'
+// FST026
+FOR EACH
+    WHERE Cecod = &Scstat
+    &Desc       = Cenom
+ENDFOR
+EndSub
+]]></Source>
+          </CodeBlock>
+        </Block>
+        <Paper>
+          <PaperId>A4</PaperId>
+          <SizeX>11906</SizeX>
+          <SizeY>16838</SizeY>
+          <RightIndent>11888</RightIndent>
+        </Paper>
+      </Layout>
+      <Rules><![CDATA[parm(&pgcod ,&itsuc ,&itmod ,&ittran ,&itnrel ,&itord ,&itsbor ,&Cancel ) ;
+]]></Rules>
+    </Procedure>
+  </GXObject>
+  <GXObject>
+    <Folder>
+      <Info>
+        <Name>CTAS_CTES_Y_AHO</Name>
+        <Description>CTAS_CTES_Y_AHO</Description>
+        <Folder>CUENTAS_CORRIENTES</Folder>
+      </Info>
+      <ObjInfo>
+      </ObjInfo>
+      <LastUpdate>2020-03-09 21:22:28GMT</LastUpdate>
+    </Folder>
+  </GXObject>
+  <GXObject>
+    <Folder>
+      <Info>
+        <Name>CUENTAS_CORRIENTES</Name>
+        <Description>CUENTAS_CORRIENTES</Description>
+        <Folder>BTPERU</Folder>
+      </Info>
+      <ObjInfo>
+      </ObjInfo>
+      <LastUpdate>2019-12-13 22:28:48GMT</LastUpdate>
+    </Folder>
+  </GXObject>
+  <GXObject>
+    <Folder>
+      <Info>
+        <Name>BTPERU</Name>
+        <Description>BTPERU</Description>
+      </Info>
+      <ObjInfo>
+      </ObjInfo>
+      <LastUpdate>2019-12-13 22:28:52GMT</LastUpdate>
+    </Folder>
+  </GXObject>
+</ExportFile>
